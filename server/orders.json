@@ -1,0 +1,194 @@
+[
+  {
+    "id": "0e21ff61-6e99-49a3-8a20-6dbccd3e1065",
+    "orderNumber": "REG-10004",
+    "createdAt": "2026-03-31T06:02:50.682Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "2b5d04da-1070-4fd7-a621-b972539282b2",
+        "productType": "namnbrickor",
+        "badgeId": 2,
+        "badgeName": "Art.nr 0202",
+        "name": "sefwefef",
+        "title": "seffsf",
+        "titleLine2": "",
+        "orgLine1": "sefff",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "quantity": 1,
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "",
+      "ordererEmail": "",
+      "ordererPhone": "",
+      "messageToSupplier": "",
+      "accountNumber": "34534356"
+    },
+    "delivery": {
+      "company": "",
+      "recipient": "",
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "7fc2253b-9ca8-448e-92fc-7cab19404607",
+    "orderNumber": "REG-10003",
+    "createdAt": "2026-03-30T12:36:33.112Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "41b130eb-df02-4825-b8c0-6d91f636f0a6",
+        "productType": "namnbrickor",
+        "badgeId": 2,
+        "badgeName": "Art.nr 0202",
+        "name": "Anna Svensson",
+        "title": "Chef",
+        "titleLine2": "",
+        "orgLine1": "kfklmsrggggggggggg",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "quantity": 1,
+        "extraMagnets": 0
+      },
+      {
+        "id": "613b4e7a-7e17-4fe5-86bd-d5e905db8538",
+        "productType": "yrkestitelsskyltar",
+        "badgeId": 101,
+        "badgeName": "Yrkestitelsskylt",
+        "title": "Barnmorska",
+        "professionChoiceId": "barnmorska",
+        "color": "#1565c0",
+        "textColor": "#ffffff",
+        "quantity": 1
+      }
+    ],
+    "orderer": {
+      "ordererName": "",
+      "ordererEmail": "",
+      "ordererPhone": "",
+      "messageToSupplier": "",
+      "accountNumber": "557898"
+    },
+    "delivery": {
+      "company": "",
+      "recipient": "",
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "ab36a9be-7b34-4f45-b0e1-4b64c340845e",
+    "orderNumber": "REG-10002",
+    "createdAt": "2026-03-29T17:47:03.832Z",
+    "status": "påbörjad",
+    "cart": [
+      {
+        "id": "680add3e-e545-41a0-b44c-06e61c529bff",
+        "productType": "namnbrickor",
+        "badgeId": 3,
+        "badgeName": "Art.nr 0205",
+        "name": "Anna Svensson",
+        "title": "Titel ska stå här",
+        "titleLine2": "Här kan man skriva en till Titel",
+        "orgLine1": "",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "quantity": 2,
+        "extraMagnets": 1
+      },
+      {
+        "id": "88cf8137-6358-4a50-b958-2be3f381ff79",
+        "productType": "namnbrickor",
+        "badgeId": 4,
+        "badgeName": "Art.nr 0207",
+        "name": "Anna Svensson",
+        "title": "Titel kan stå här",
+        "titleLine2": "",
+        "orgLine1": "Verksamhets namn rad 1 här",
+        "orgLine2": "Verksamhetsnamn rad 2 här",
+        "fastening": "Magnet",
+        "quantity": 4,
+        "extraMagnets": 0
+      },
+      {
+        "id": "a696cecf-0b36-45a0-b962-f0b5dad4ad7f",
+        "productType": "yrkestitelsskyltar",
+        "badgeId": 101,
+        "badgeName": "Yrkestitelsskylt",
+        "title": "Servicepersonal",
+        "professionChoiceId": "servicepersonal",
+        "color": "#212121",
+        "textColor": "#ffffff",
+        "quantity": 2
+      },
+      {
+        "id": "c7b93a80-5bec-4ecf-9e3c-e13c59801e29",
+        "productType": "yrkestitelsskyltar",
+        "badgeId": 101,
+        "badgeName": "Yrkestitelsskylt",
+        "title": "Elin Thunberg",
+        "professionChoiceId": "receptionist",
+        "color": "#4fc3f7",
+        "textColor": "#ffffff",
+        "quantity": 1
+      }
+    ],
+    "orderer": {
+      "ordererName": "Anna Svensson",
+      "ordererEmail": "anna@rjl.se",
+      "ordererPhone": "076-6104522",
+      "messageToSupplier": "",
+      "accountNumber": "989856"
+    },
+    "delivery": {
+      "company": "Onkologmottagningen Jönköpings Län",
+      "recipient": "Ellie",
+      "address": "Ryhovsgatan 33",
+      "postalCode": "556 52 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "7f4568e0-bcec-4950-80e2-36a6b9f0a6f6",
+    "orderNumber": "REG-10001",
+    "createdAt": "2026-03-29T17:25:16.213Z",
+    "status": "skickad",
+    "cart": [
+      {
+        "id": "766b15eb-4343-43fc-8952-9eb791c6b03c",
+        "productType": "yrkestitelsskyltar",
+        "badgeId": 101,
+        "badgeName": "Yrkestitelsskylt",
+        "title": "Läkare",
+        "professionChoiceId": "lakare",
+        "color": "#c62828",
+        "textColor": "#ffffff",
+        "quantity": 1
+      }
+    ],
+    "orderer": {
+      "ordererName": "Anna Svensson",
+      "ordererEmail": "anna@rjl.se",
+      "ordererPhone": "076-6104522",
+      "messageToSupplier": "",
+      "accountNumber": "5554875"
+    },
+    "delivery": {
+      "company": "Onkologmottagningen Jönköpings Län",
+      "recipient": "Martin",
+      "address": "Ryhovsgatan 33",
+      "postalCode": "556 52 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  }
+]
