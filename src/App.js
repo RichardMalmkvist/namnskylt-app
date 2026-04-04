@@ -1055,7 +1055,12 @@ export default function App() {
         )}
 
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <TopBar cartCount={cartCount} onCartClick={() => setStep("cart")} />
+          <TopBar
+            cartCount={cartCount}
+            onCartClick={() => setStep("cart")}
+            onLoginClick={() => setStep("adminLogin")}
+            onLogoClick={() => setStep("landing")}
+          />
 
           <div style={{ marginBottom: 20, textAlign: "right" }}>
             <button
