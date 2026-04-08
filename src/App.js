@@ -693,7 +693,8 @@ export default function App() {
     setAdminError("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/login", {
+      const response = await fetch("/api/login", {
+
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -718,7 +719,7 @@ export default function App() {
 
   async function fetchOrders(passwordToUse = adminPassword) {
     try {
-      const response = await fetch("http://localhost:5000/api/orders", {
+      const response = await fetch("/api/orders", {
         headers: {
           "x-admin-password": passwordToUse,
         },
@@ -743,7 +744,7 @@ export default function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/${orderId}/status`,
+        `/api/orders/${orderId}/status`,
         {
           method: "PATCH",
           headers: {
@@ -784,7 +785,7 @@ export default function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/orders/${orderId}`,
+        `/api/orders/${orderId}`,
         {
           method: "DELETE",
           headers: {
@@ -809,7 +810,7 @@ export default function App() {
 
   async function submitOrderToBackend() {
     try {
-      const response = await fetch("http://localhost:5000/api/orders", {
+      const response = await fetch("/api/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
