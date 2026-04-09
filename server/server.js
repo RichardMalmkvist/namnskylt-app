@@ -118,6 +118,27 @@ app.post("/api/orders", async (req, res) => {
   };
   orders.unshift(newOrder);
   await writeOrders(orders);
+  
+    // Skicka bekräftelsemail
+  try {
+    const emailClient = new EmailClient(process.env.ACS_CONNECTION_STRING);
+    const customerEmail = order.orderer?.email;
+    if (customerEmail) {
+      const message = {
+        senderAddress: "DoNotReply@a80901a0-70aa-4a01-ab49-02633e2442ea.azurecomm.net",
+        recipients: { to: [{ address: customerEmail }] },
+        content: {
+          subject: `Orderbekräftelse – ${orderNumber}`,
+          plainText: `Hej ${order.orderer?.name || ""},\n\nTack för din beställning!\n\nOrdernummer: ${orderNumber}\n\nVi behandlar din beställning och återkommer när den är klar.\n\nHar du frågor? Kontakta oss på: richard.malmkvist@jonkopingsskyltfabrik.se\n\nMed vänliga hälsningar,\nJönköpings Skyltfabrik`,
+        },
+      };
+      const poller = await emailClient.beginSend(message);
+      await poller.pollUntilDone();
+    }
+  } catch (emailError) {
+    console.error("Fel vid skickning av bekräftelsemail:", emailError);
+  }
+
   return res.json({ success: true, order: newOrder });
 });
 
