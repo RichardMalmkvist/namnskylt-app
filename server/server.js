@@ -5,7 +5,6 @@ const crypto = require("crypto");
 const { BlobServiceClient } = require("@azure/storage-blob");
 const { EmailClient } = require("@azure/communication-email");
 
-
 const app = express();
 const PORT = process.env.PORT || 8080;
 
@@ -119,25 +118,36 @@ app.post("/api/orders", async (req, res) => {
     delivery: order.delivery || {},
   };
   orders.unshift(newOrder);
-  await writeOrders(orders)
+  await writeOrders(orders);
 
-        try {
+  try {
     const emailClient = new EmailClient(process.env.ACS_CONNECTION_STRING);
-   const customerEmail = order.orderer?.ordererEmail;
+    const customerEmail = order.orderer?.ordererEmail;
     if (customerEmail) {
       console.log("Försöker skicka mail till:", customerEmail);
+
+      const firstName = order.orderer?.ordererName?.split(" ")[0] || "";
+      const productLines = newOrder.cart.map((item, i) => {
+        if (item.productType === "yrkestitelsskyltar") {
+          return `${i + 1}. ${item.badgeName}\n   Text: ${item.title}\n   Antal: ${item.quantity}`;
+        }
+        let line = `${i + 1}. ${item.badgeName}\n   Namn: ${item.name}\n   Titel: ${item.title}`;
+        if (item.titleLine2) line += `\n   Titel rad 2: ${item.titleLine2}`;
+        if (item.orgLine1) line += `\n   Verksamhet: ${item.orgLine1}`;
+        if (item.orgLine2) line += `\n   Verksamhet rad 2: ${item.orgLine2}`;
+        line += `\n   Fäste: ${item.fastening}\n   Extra magnetfästen: ${item.extraMagnets}\n   Antal: ${item.quantity}`;
+        return line;
+      }).join("\n\n");
+
+      const emailBody = `Hej ${firstName},\n\nTack för din beställning!\n\nOrdernummer: ${orderNumber}\n\n── DIN BESTÄLLNING ──\n${productLines}\n\nOm något ser fel ut, kontakta oss på: richard.malmkvist@jonkopingsskyltfabrik.se\n\nMed vänliga hälsningar,\nJönköpings Skyltfabrik`;
+
       const message = {
         senderAddress: "DoNotReply@a80901a0-70aa-4a01-ab49-02633e2442ea.azurecomm.net",
         recipients: { to: [{ address: customerEmail }] },
         content: {
           subject: `Orderbekräftelse – ${orderNumber}`,
-          plainText: `Hej ${order.orderer?.ordererName?.split(" ")[0] || ""},\n\nTack för din beställning!\n\nOrdernummer: ${orderNumber}\n\n── DIN BESTÄLLNING ──\n${newOrder.cart.map((item, i) => {
-  if (item.productType === "yrkestitelsskyltar") {
-    return `${i + 1}. ${item.badgeName}\n   Text: ${item.title}\n   Antal: ${item.quantity}`;
-  }
-  return `${i + 1}. ${item.badgeName}\n   Namn: ${item.name}\n   Titel: ${item.title}${item.titleLine2 ? `\n   Titel rad 2: ${item.titleLine2}` : ""}${item.orgLine1 ? `\n   Verksamhet: ${item.orgLine1}` : ""}${item.orgLine2 ? `\n   Verksamhet rad 2: ${item.orgLine2}` : ""}\n   Fäste: ${item.fastening}\n   Extra magnetfästen: ${item.extraMagnets}\n   Antal: ${item.quantity}`;
-}).join("\n\n")}\n\nOm något ser fel ut, kontakta oss på: richard.malmkvist@jonkopingsskyltfabrik.se\n\nMed vänliga hälsningar,\nJönköpings Skyltfabrik`,
-
+          plainText: emailBody,
+        },
       };
       const poller = await emailClient.beginSend(message);
       const result = await poller.pollUntilDone();
