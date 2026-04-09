@@ -123,7 +123,7 @@ app.post("/api/orders", async (req, res) => {
 
         try {
     const emailClient = new EmailClient(process.env.ACS_CONNECTION_STRING);
-    const customerEmail = order.orderer?.email;
+   const customerEmail = order.orderer?.ordererEmail;
     if (customerEmail) {
       console.log("Försöker skicka mail till:", customerEmail);
       const message = {
