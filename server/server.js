@@ -131,8 +131,13 @@ app.post("/api/orders", async (req, res) => {
         recipients: { to: [{ address: customerEmail }] },
         content: {
           subject: `Orderbekräftelse – ${orderNumber}`,
-          plainText: `Hej ${order.orderer?.name || ""},\n\nTack för din beställning!\n\nOrdernummer: ${orderNumber}\n\nVi behandlar din beställning och återkommer när den är klar.\n\nHar du frågor? Kontakta oss på: richard.malmkvist@jonkopingsskyltfabrik.se\n\nMed vänliga hälsningar,\nJönköpings Skyltfabrik`,
-        },
+          plainText: `Hej ${order.orderer?.ordererName?.split(" ")[0] || ""},\n\nTack för din beställning!\n\nOrdernummer: ${orderNumber}\n\n── DIN BESTÄLLNING ──\n${newOrder.cart.map((item, i) => {
+  if (item.productType === "yrkestitelsskyltar") {
+    return `${i + 1}. ${item.badgeName}\n   Text: ${item.title}\n   Antal: ${item.quantity}`;
+  }
+  return `${i + 1}. ${item.badgeName}\n   Namn: ${item.name}\n   Titel: ${item.title}${item.titleLine2 ? `\n   Titel rad 2: ${item.titleLine2}` : ""}${item.orgLine1 ? `\n   Verksamhet: ${item.orgLine1}` : ""}${item.orgLine2 ? `\n   Verksamhet rad 2: ${item.orgLine2}` : ""}\n   Fäste: ${item.fastening}\n   Extra magnetfästen: ${item.extraMagnets}\n   Antal: ${item.quantity}`;
+}).join("\n\n")}\n\nOm något ser fel ut, kontakta oss på: richard.malmkvist@jonkopingsskyltfabrik.se\n\nMed vänliga hälsningar,\nJönköpings Skyltfabrik`,
+
       };
       const poller = await emailClient.beginSend(message);
       const result = await poller.pollUntilDone();
