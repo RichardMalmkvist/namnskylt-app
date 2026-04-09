@@ -119,13 +119,13 @@ app.post("/api/orders", async (req, res) => {
     delivery: order.delivery || {},
   };
   orders.unshift(newOrder);
-  await writeOrders(orders);
-  
-    // Skicka bekräftelsemail
-  try {
+  await writeOrders(orders)
+
+        try {
     const emailClient = new EmailClient(process.env.ACS_CONNECTION_STRING);
     const customerEmail = order.orderer?.email;
     if (customerEmail) {
+      console.log("Försöker skicka mail till:", customerEmail);
       const message = {
         senderAddress: "DoNotReply@a80901a0-70aa-4a01-ab49-02633e2442ea.azurecomm.net",
         recipients: { to: [{ address: customerEmail }] },
@@ -135,7 +135,10 @@ app.post("/api/orders", async (req, res) => {
         },
       };
       const poller = await emailClient.beginSend(message);
-      await poller.pollUntilDone();
+      const result = await poller.pollUntilDone();
+      console.log("Mail skickat, status:", result.status);
+    } else {
+      console.log("Ingen e-postadress angiven, hoppar över mail.");
     }
   } catch (emailError) {
     console.error("Fel vid skickning av bekräftelsemail:", emailError);
