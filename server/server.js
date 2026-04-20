@@ -150,8 +150,14 @@ app.post("/api/orders", async (req, res) => {
         },
       };
       const poller = await emailClient.beginSend(message);
-      const result = await poller.pollUntilDone();
-      console.log("Mail skickat, status:", result.status);
+      const result = await poller.pollUntilDone({
+        intervalInMs: 5000,
+      });
+      if (result.status === "Succeeded") {
+        console.log("Mail skickat, status:", result.status);
+      } else {
+        console.log("Mail status:", result.status);
+      }
     } else {
       console.log("Ingen e-postadress angiven, hoppar över mail.");
     }
