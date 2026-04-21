@@ -2905,7 +2905,7 @@ export default function App() {
                 >
                   <option value="">Välj...</option>
                   <option value="Magnet">Magnet</option>
-                  <option value="Nål">Nål</option>
+                  <option value="Plastklämma">Plastklämma</option>
                 </select>
               </Field>
 
