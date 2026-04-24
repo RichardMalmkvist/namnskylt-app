@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useRef } from "react";
 import {
   PRODUCT_TYPES,
   NAME_BADGES,
@@ -685,6 +685,8 @@ export default function App() {
   const [ordersSortBy, setOrdersSortBy] = useState("createdAt");
   const [ordersSortDirection, setOrdersSortDirection] = useState("desc");
 
+  const isSubmittingRef = useRef(false);
+
   function resetProductForm() {
     setProductForm(EMPTY_PRODUCT_FORM);
   }
@@ -809,6 +811,9 @@ export default function App() {
   }
 
   async function submitOrderToBackend() {
+    if (isSubmittingRef.current) return;
+    isSubmittingRef.current = true;
+
     try {
       const response = await fetch("/api/orders", {
         method: "POST",
@@ -846,6 +851,8 @@ export default function App() {
       }, 3000);
     } catch {
       alert("Kunde inte ansluta till servern.");
+    } finally {
+      isSubmittingRef.current = false;
     }
   }
 
@@ -2546,9 +2553,14 @@ export default function App() {
                   <button
                     type="button"
                     onClick={submitOrderToBackend}
-                    style={primaryButtonStyle}
+                    disabled={isSubmittingRef.current}
+                    style={{
+                      ...primaryButtonStyle,
+                      opacity: isSubmittingRef.current ? 0.6 : 1,
+                      cursor: isSubmittingRef.current ? "not-allowed" : "pointer",
+                    }}
                   >
-                    Bekräfta beställning
+                    {isSubmittingRef.current ? "Skickar..." : "Bekräfta beställning"}
                   </button>
                 </div>
               </div>
