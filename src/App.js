@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useRef } from "react";
 import PageContainer from "./components/layout/PageContainer";
 import AppHeader from "./components/layout/AppHeader";
 import { printStyle } from "./styles/printStyles";
@@ -60,9 +60,10 @@ export default function App() {
   const [ordersSortBy, setOrdersSortBy] = useState("createdAt");
   const [ordersSortDirection, setOrdersSortDirection] = useState("desc");
 
+  const isSubmittingRef = useRef(false);
+
   function showTemporaryMessage(message, setter = setSuccessMessage) {
     setter(message);
-
     setTimeout(() => {
       setter("");
     }, 3000);
@@ -188,7 +189,6 @@ export default function App() {
 
   function addDirectProductToCart(product, quantity, directFieldValues = {}) {
     const newItem = createDirectCartItem(product, quantity, directFieldValues);
-
     addCartItem(newItem);
     showTemporaryMessage(`${product.name} lades i kundkorgen.`);
     scrollToTop();
@@ -198,7 +198,7 @@ export default function App() {
     setAdminError("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/login", {
+      const response = await fetch("/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -224,7 +224,7 @@ export default function App() {
 
   async function fetchOrders(passwordToUse = adminPassword) {
     try {
-      const response = await fetch("http://localhost:5000/api/orders", {
+      const response = await fetch("/api/orders", {
         headers: {
           "x-admin-password": passwordToUse,
         },
@@ -248,17 +248,14 @@ export default function App() {
     setIsUpdatingOrderStatus(true);
 
     try {
-      const response = await fetch(
-        `http://localhost:5000/api/orders/${orderId}/status`,
-        {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-            "x-admin-password": adminPassword,
-          },
-          body: JSON.stringify({ status: newStatus }),
-        }
-      );
+      const response = await fetch(`/api/orders/${orderId}/status`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          "x-admin-password": adminPassword,
+        },
+        body: JSON.stringify({ status: newStatus }),
+      });
 
       const data = await response.json();
 
@@ -287,7 +284,7 @@ export default function App() {
     setAdminError("");
 
     try {
-      const response = await fetch(`http://localhost:5000/api/orders/${orderId}`, {
+      const response = await fetch(`/api/orders/${orderId}`, {
         method: "DELETE",
         headers: {
           "x-admin-password": adminPassword,
@@ -309,8 +306,11 @@ export default function App() {
   }
 
   async function submitOrderToBackend() {
+    if (isSubmittingRef.current) return;
+    isSubmittingRef.current = true;
+
     try {
-      const response = await fetch("http://localhost:5000/api/orders", {
+      const response = await fetch("/api/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -349,6 +349,8 @@ export default function App() {
       scrollToTop();
     } catch {
       alert("Kunde inte ansluta till servern.");
+    } finally {
+      isSubmittingRef.current = false;
     }
   }
 
@@ -806,25 +808,19 @@ export default function App() {
                           <td style={tableCellStyle}>
                             {new Date(order.createdAt).toLocaleDateString("sv-SE")}
                           </td>
-
                           <td style={tableCellStyle}>{order.orderNumber || "-"}</td>
                           <td style={tableCellStyle}>{types || "-"}</td>
                           <td style={tableCellStyle}>{totalQuantity}</td>
-
                           <td style={tableCellStyle}>
                             {order.orderer?.ordererName || "-"}
                           </td>
-
                           <td style={tableCellStyle}>
                             {order.orderer?.accountNumber || "-"}
                           </td>
-
                           <td style={tableCellStyle}>
                             {order.orderer?.ordererEmail || "-"}
                           </td>
-
                           <td style={tableCellStyle}>{deliveryText || "-"}</td>
-
                           <td style={tableCellStyle}>
                             <span
                               style={{
@@ -914,12 +910,10 @@ export default function App() {
                     <strong>Ordernummer:</strong>{" "}
                     {selectedOrder.orderNumber || selectedOrder.id}
                   </div>
-
                   <div style={{ marginTop: 8 }}>
                     <strong>Datum:</strong>{" "}
                     {new Date(selectedOrder.createdAt).toLocaleString("sv-SE")}
                   </div>
-
                   <div style={{ marginTop: 12 }}>
                     <label
                       htmlFor="selectedOrderStatus"
@@ -931,7 +925,6 @@ export default function App() {
                     >
                       Status
                     </label>
-
                     <select
                       id="selectedOrderStatus"
                       value={selectedOrder.status || "ny"}
@@ -946,7 +939,6 @@ export default function App() {
                       <option value="klar">Klar</option>
                       <option value="skickad">Skickad</option>
                     </select>
-
                     {isUpdatingOrderStatus && (
                       <div style={{ marginTop: 8, color: "#555" }}>
                         Sparar status...
@@ -957,7 +949,6 @@ export default function App() {
 
                 <div style={{ marginBottom: 20 }}>
                   <div style={sectionTitleStyle}>Produkter</div>
-
                   <div style={{ display: "grid", gap: 12 }}>
                     {(selectedOrder.cart || []).map((item) => (
                       <div
@@ -972,11 +963,9 @@ export default function App() {
                         <div style={{ fontWeight: "bold", marginBottom: 6 }}>
                           {item.badgeName}
                         </div>
-
                         <div>
                           <strong>Typ:</strong> {getProductTypeLabel(item.productType)}
                         </div>
-
                         {renderOrderItemDetails(item)}
                       </div>
                     ))}
@@ -985,56 +974,21 @@ export default function App() {
 
                 <div style={{ marginBottom: 20 }}>
                   <div style={sectionTitleStyle}>Beställare</div>
-                  <div>
-                    <span style={{ color: "#666" }}>Namn:</span>{" "}
-                    {selectedOrder.orderer?.ordererName || "-"}
-                  </div>
-                  <div>
-                    <span style={{ color: "#666" }}>E-post:</span>{" "}
-                    {selectedOrder.orderer?.ordererEmail || "-"}
-                  </div>
-                  <div>
-                    <span style={{ color: "#666" }}>Mobilnummer:</span>{" "}
-                    {selectedOrder.orderer?.ordererPhone || "-"}
-                  </div>
-                  <div>
-                    <span style={{ color: "#666" }}>Ansvarsnummer:</span>{" "}
-                    {selectedOrder.orderer?.accountNumber || "-"}
-                  </div>
-                  <div>
-                    <span style={{ color: "#666" }}>
-                      Meddelande till leverantör:
-                    </span>{" "}
-                    {selectedOrder.orderer?.messageToSupplier || "-"}
-                  </div>
+                  <div><span style={{ color: "#666" }}>Namn:</span> {selectedOrder.orderer?.ordererName || "-"}</div>
+                  <div><span style={{ color: "#666" }}>E-post:</span> {selectedOrder.orderer?.ordererEmail || "-"}</div>
+                  <div><span style={{ color: "#666" }}>Mobilnummer:</span> {selectedOrder.orderer?.ordererPhone || "-"}</div>
+                  <div><span style={{ color: "#666" }}>Ansvarsnummer:</span> {selectedOrder.orderer?.accountNumber || "-"}</div>
+                  <div><span style={{ color: "#666" }}>Meddelande till leverantör:</span> {selectedOrder.orderer?.messageToSupplier || "-"}</div>
                 </div>
 
                 <div style={{ marginBottom: 12 }}>
                   <div style={sectionTitleStyle}>Leveransadress</div>
-                  <div>
-                    <span style={{ color: "#666" }}>Företag:</span>{" "}
-                    {selectedOrder.delivery?.company || "-"}
-                  </div>
-                  <div>
-                    <span style={{ color: "#666" }}>Mottagare:</span>{" "}
-                    {selectedOrder.delivery?.recipient || "-"}
-                  </div>
-                  <div>
-                    <span style={{ color: "#666" }}>Adress:</span>{" "}
-                    {selectedOrder.delivery?.address || "-"}
-                  </div>
-                  <div>
-                    <span style={{ color: "#666" }}>Postnummer:</span>{" "}
-                    {selectedOrder.delivery?.postalCode || "-"}
-                  </div>
-                  <div>
-                    <span style={{ color: "#666" }}>Postort:</span>{" "}
-                    {selectedOrder.delivery?.city || "-"}
-                  </div>
-                  <div>
-                    <span style={{ color: "#666" }}>Land:</span>{" "}
-                    {selectedOrder.delivery?.country || "-"}
-                  </div>
+                  <div><span style={{ color: "#666" }}>Företag:</span> {selectedOrder.delivery?.company || "-"}</div>
+                  <div><span style={{ color: "#666" }}>Mottagare:</span> {selectedOrder.delivery?.recipient || "-"}</div>
+                  <div><span style={{ color: "#666" }}>Adress:</span> {selectedOrder.delivery?.address || "-"}</div>
+                  <div><span style={{ color: "#666" }}>Postnummer:</span> {selectedOrder.delivery?.postalCode || "-"}</div>
+                  <div><span style={{ color: "#666" }}>Postort:</span> {selectedOrder.delivery?.city || "-"}</div>
+                  <div><span style={{ color: "#666" }}>Land:</span> {selectedOrder.delivery?.country || "-"}</div>
                 </div>
               </div>
             </div>
