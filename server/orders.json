@@ -1,86 +1,1343 @@
 [
   {
-    "id": "0e21ff61-6e99-49a3-8a20-6dbccd3e1065",
-    "orderNumber": "REG-10004",
-    "createdAt": "2026-03-31T06:02:50.682Z",
+    "id": "ba3890ba-0b37-434b-93ea-110796897752",
+    "orderNumber": "REG-10023",
+    "createdAt": "2026-04-24T12:30:27.178Z",
     "status": "ny",
     "cart": [
       {
-        "id": "2b5d04da-1070-4fd7-a621-b972539282b2",
-        "productType": "namnbrickor",
-        "badgeId": 2,
-        "badgeName": "Art.nr 0202",
-        "name": "sefwefef",
-        "title": "seffsf",
-        "titleLine2": "",
-        "orgLine1": "sefff",
-        "orgLine2": "",
-        "fastening": "Magnet",
-        "quantity": 1,
-        "extraMagnets": 0
+        "id": "38d57170-288e-404e-b9bb-d18d4ec24bf2",
+        "badgeId": 229,
+        "categoryId": "yrkestitelsskyltar",
+        "productType": "yrkestitelsskylt",
+        "productTypeLabel": "Yrkestitelsskylt",
+        "previewType": "profession",
+        "badgeName": "Tandläkare",
+        "articleNumber": "YRK-FT-0229",
+        "quantity": 2,
+        "image": "/art.-0201.jpg",
+        "desc": "Yrkestitelsskylt Folktandvården i ljusblå färg.",
+        "extraLine": "",
+        "format": "",
+        "extraFields": [],
+        "title": "Tandläkare",
+        "color": "Ljusblå",
+        "textColor": ""
+      },
+      {
+        "id": "45d02312-d491-4c22-9188-478ad1cdfa43",
+        "badgeId": 221,
+        "categoryId": "yrkestitelsskyltar",
+        "productType": "yrkestitelsskylt",
+        "productTypeLabel": "Yrkestitelsskylt",
+        "previewType": "profession",
+        "badgeName": "Klinikchef",
+        "articleNumber": "YRK-FT-0221",
+        "quantity": 2,
+        "image": "/art.-0201.jpg",
+        "desc": "Yrkestitelsskylt Folktandvården i ljusblå färg.",
+        "extraLine": "",
+        "format": "",
+        "extraFields": [],
+        "title": "Klinikchef",
+        "color": "Ljusblå",
+        "textColor": ""
       }
     ],
     "orderer": {
-      "ordererName": "",
-      "ordererEmail": "",
-      "ordererPhone": "",
+      "ordererName": "Jessica Bruhn",
+      "ordererEmail": "jessica.bruhn@rjl.se",
+      "ordererPhone": "0102429703",
       "messageToSupplier": "",
-      "accountNumber": "34534356"
+      "accountNumber": "512110"
     },
     "delivery": {
-      "company": "",
-      "recipient": "",
-      "address": "",
-      "postalCode": "",
-      "city": "",
+      "company": "Råslätt Folktandvård",
+      "recipient": "Jessica Bruhn",
+      "address": "Törnskategatan 1",
+      "postalCode": "556 14",
+      "city": "Jönköping",
       "country": "Sverige"
     }
   },
   {
-    "id": "7fc2253b-9ca8-448e-92fc-7cab19404607",
-    "orderNumber": "REG-10003",
-    "createdAt": "2026-03-30T12:36:33.112Z",
+    "id": "0eb520d0-95b7-4d69-9877-263f31aecd61",
+    "orderNumber": "REG-10022",
+    "createdAt": "2026-04-24T12:22:53.246Z",
     "status": "ny",
     "cart": [
       {
-        "id": "41b130eb-df02-4825-b8c0-6d91f636f0a6",
-        "productType": "namnbrickor",
-        "badgeId": 2,
-        "badgeName": "Art.nr 0202",
-        "name": "Anna Svensson",
-        "title": "Chef",
+        "id": "18701222-5592-4262-93da-6fee1ddebdae",
+        "badgeId": 4,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0207",
+        "articleNumber": "0207",
+        "quantity": 5,
+        "image": "/art.-0207.jpg",
+        "desc": "Med verksamhetsnamn, 2 rader, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "-",
+        "title": "Omvårdnadsassistent",
         "titleLine2": "",
-        "orgLine1": "kfklmsrggggggggggg",
-        "orgLine2": "",
+        "orgLine1": "Barn- och ungdoms-",
+        "orgLine2": "psykiatrikska mottagningen",
         "fastening": "Magnet",
-        "quantity": 1,
         "extraMagnets": 0
-      },
-      {
-        "id": "613b4e7a-7e17-4fe5-86bd-d5e905db8538",
-        "productType": "yrkestitelsskyltar",
-        "badgeId": 101,
-        "badgeName": "Yrkestitelsskylt",
-        "title": "Barnmorska",
-        "professionChoiceId": "barnmorska",
-        "color": "#1565c0",
-        "textColor": "#ffffff",
-        "quantity": 1
       }
     ],
     "orderer": {
-      "ordererName": "",
-      "ordererEmail": "",
-      "ordererPhone": "",
+      "ordererName": "Carolin Johansson",
+      "ordererEmail": "carolin.johansson@rjl.se",
+      "ordererPhone": "-",
       "messageToSupplier": "",
-      "accountNumber": "557898"
+      "accountNumber": "157076"
     },
     "delivery": {
-      "company": "",
-      "recipient": "",
-      "address": "",
+      "company": "Barn- och ungdomspsykiatriska kliniken Jönköping",
+      "recipient": "Carolin",
+      "address": "Länssjukhuset Ryhov, hus A2",
+      "postalCode": "551 85 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "f6e6f1ea-7c89-462d-8a67-6e9d79c6a1c0",
+    "orderNumber": "REG-10021",
+    "createdAt": "2026-04-24T12:21:48.587Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "215c32e1-0c04-4485-a7a6-8058f219e907",
+        "badgeId": 4,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0207",
+        "articleNumber": "0207",
+        "quantity": 5,
+        "image": "/art.-0207.jpg",
+        "desc": "Med verksamhetsnamn, 2 rader, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "-",
+        "title": "Omvårdnadsassistent",
+        "titleLine2": "",
+        "orgLine1": "Barn- och ungdoms-",
+        "orgLine2": "psykiatrikska mottagningen",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Carolin Johansson",
+      "ordererEmail": "carolin.johansson@rjl.se",
+      "ordererPhone": "-",
+      "messageToSupplier": "",
+      "accountNumber": "157076"
+    },
+    "delivery": {
+      "company": "Barn- och ungdomspsykiatriska kliniken Jönköping",
+      "recipient": "Carolin",
+      "address": "Länssjukhuset Ryhov, hus A2",
+      "postalCode": "551 85 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "985402f5-5358-4cbe-8a44-154226010f15",
+    "orderNumber": "REG-10020",
+    "createdAt": "2026-04-24T11:44:54.388Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "9c8fef93-bb72-44bb-8f31-0518664502ea",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Ann-Katrin Sparr",
+        "title": "HR-partner",
+        "titleLine2": "",
+        "orgLine1": "Psykiatri, rehabilitering och diagnostik",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Jennie Johansson",
+      "ordererEmail": "jennie.johansson@rjl.se",
+      "ordererPhone": "0703989348",
+      "messageToSupplier": "",
+      "accountNumber": "115003"
+    },
+    "delivery": {
+      "company": "Psykiatri, rehabilitering och diagnostik stab",
+      "recipient": "Jennie Johansson",
+      "address": "Batterigatan 14C plan 1",
+      "postalCode": "551 85 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "c21440e6-ec1b-4ae9-ba72-4768446d26fd",
+    "orderNumber": "REG-10019",
+    "createdAt": "2026-04-22T13:26:46.006Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "796ae2ab-1bee-4f3c-a08a-b68c6bf54ff3",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Ann-Katrin Sparr",
+        "title": "HR-partner",
+        "titleLine2": "",
+        "orgLine1": "Psykiatri, rehabilitering och diagnostik",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Jennie Johansson",
+      "ordererEmail": "jennie.johansson@rjl.se",
+      "ordererPhone": "0703989348",
+      "messageToSupplier": "",
+      "accountNumber": "115003"
+    },
+    "delivery": {
+      "company": "Psykiatri, rehabilitering och diagnostik stab",
+      "recipient": "Jennie Johansson",
+      "address": "Batterigatan 14C plan 1",
+      "postalCode": "551 85 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "8d7c70f4-7fde-464c-8e99-2a25316dd0c9",
+    "orderNumber": "REG-10018",
+    "createdAt": "2026-04-22T13:25:16.900Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "d9b393cb-4e38-4d43-8481-5afbe9030564",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Ida Jensen",
+        "title": "Sjuksköterska",
+        "titleLine2": "",
+        "orgLine1": "1177 på telefon",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      },
+      {
+        "id": "b60f6d34-4be4-4013-99fb-218b360c8da1",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Wafaa Hanna",
+        "title": "Sjuksköterska",
+        "titleLine2": "",
+        "orgLine1": "1177 på telefon",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      },
+      {
+        "id": "9c4b9db5-873e-4318-93c6-d20abe0ba08e",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Rakel Filipsson",
+        "title": "Specialistsjuksköterska",
+        "titleLine2": "",
+        "orgLine1": "1177 på telefon",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Emma Forsman",
+      "ordererEmail": "emma.forsman@rjl.se",
+      "ordererPhone": "0703503418",
+      "messageToSupplier": "",
+      "accountNumber": "424010"
+    },
+    "delivery": {
+      "company": "1177 på telefon, vån 2",
+      "recipient": "Emma Forsman",
+      "address": "Region Jönköpings län, Batterigatan, 1177 på telefon, B14",
+      "postalCode": "551 85",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "9f4b7cb0-f0e7-4004-b9a6-ef9de328c35d",
+    "orderNumber": "REG-10017",
+    "createdAt": "2026-04-22T13:22:36.424Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "a9adc07a-251f-4b3f-bc66-769378f37b38",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Marie Svensson",
+        "title": "Ekonom",
+        "titleLine2": "",
+        "orgLine1": "Regionledningskontoret",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Anneli Wetter",
+      "ordererEmail": "anneli.wetter@rjl.se",
+      "ordererPhone": "0102424007",
+      "messageToSupplier": "",
+      "accountNumber": "418570"
+    },
+    "delivery": {
+      "company": "Regionens hus Region Jönköpings län",
+      "recipient": "Resurscentrum/Anneli Wetter",
+      "address": "Husargatan 4",
+      "postalCode": "554 53 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "691c15ff-d41f-4b34-bd42-4850a12d6839",
+    "orderNumber": "REG-10016",
+    "createdAt": "2026-04-22T13:18:24.359Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "84586fae-fb4f-45ed-b7eb-b00d7891e021",
+        "badgeId": 4,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0207",
+        "articleNumber": "0207",
+        "quantity": 1,
+        "image": "/art.-0207.jpg",
+        "desc": "Med verksamhetsnamn, 2 rader, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Björn",
+        "title": "Skötare",
+        "titleLine2": "",
+        "orgLine1": "Barn- och ungdoms-",
+        "orgLine2": "psykiatrikska mottagningen",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      },
+      {
+        "id": "d356a8ff-54cc-4433-8304-0e0142984735",
+        "badgeId": 4,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0207",
+        "articleNumber": "0207",
+        "quantity": 1,
+        "image": "/art.-0207.jpg",
+        "desc": "Med verksamhetsnamn, 2 rader, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Christina",
+        "title": "Skötare",
+        "titleLine2": "",
+        "orgLine1": "Barn- och ungdoms-",
+        "orgLine2": "psykiatrikska mottagningen",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Carolin Johansson",
+      "ordererEmail": "carolin.johansson@rjl.se",
+      "ordererPhone": "",
+      "messageToSupplier": "",
+      "accountNumber": "157076"
+    },
+    "delivery": {
+      "company": "Barn- och ungdomspsykiatriska kliniken Jönköping",
+      "recipient": "Carolin Johansson",
+      "address": "Länssjukhuset Ryhov, hus A2",
+      "postalCode": "551 85 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "2a4c12f7-88b7-4016-8219-ae444267c459",
+    "orderNumber": "REG-10015",
+    "createdAt": "2026-04-22T13:15:50.479Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "b3c6b2f8-edf2-42cf-8914-a8708d57a390",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 5,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Praktikant/Student",
+        "title": "-",
+        "titleLine2": "",
+        "orgLine1": "Regionledningskontoret",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      },
+      {
+        "id": "3307a3c0-3b8d-4034-8aba-b306eb154e27",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 5,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Medarbetare",
+        "title": "-",
+        "titleLine2": "",
+        "orgLine1": "Regionledningskontoret",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Anneli Wetter",
+      "ordererEmail": "anneli.wetter@rjl.se",
+      "ordererPhone": "0102424007",
+      "messageToSupplier": "",
+      "accountNumber": "418441"
+    },
+    "delivery": {
+      "company": "Regionens hus Region Jönköpings län",
+      "recipient": "Resurscentrum/Anneli Wetter",
+      "address": "Husargatan 4",
+      "postalCode": "554 53 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "cbbdce7e-4f6c-4b14-b20a-5e698683646b",
+    "orderNumber": "REG-10014",
+    "createdAt": "2026-04-22T13:14:01.329Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "a04c5bc8-1d57-4ce5-bf75-0eed86a3b395",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Ajla Bajric",
+        "title": "Utvecklingsledare",
+        "titleLine2": "",
+        "orgLine1": "Metodikum",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Magnus Berndtzon",
+      "ordererEmail": "magnus.berndtzon@rjl.se",
+      "ordererPhone": "0705198866",
+      "messageToSupplier": "",
+      "accountNumber": "422201"
+    },
+    "delivery": {
+      "company": "Metodikum, Region Jönköpings län",
+      "recipient": "Ajla Bajric",
+      "address": "Metodikum hus 37, Höglandssjukhuset i Eksjö",
       "postalCode": "",
-      "city": "",
+      "city": "Eksjö",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "2070ee7d-31dd-4b3f-83e7-df102f0bdc4a",
+    "orderNumber": "REG-10013",
+    "createdAt": "2026-04-22T13:11:53.245Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "1b63a6b5-e013-46ad-ae3b-d8820bffea16",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "William Sandberg",
+        "title": "Ekonomiadministratör",
+        "titleLine2": "",
+        "orgLine1": "Regionledningskontoret",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      },
+      {
+        "id": "df053ec2-df5e-46fa-a56c-53c37ff96a50",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Edvin Nyman",
+        "title": "Ekonomiadministratör",
+        "titleLine2": "",
+        "orgLine1": "Regionledningskontoret",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Anneli Wetter",
+      "ordererEmail": "anneli.wetter@rjl.se",
+      "ordererPhone": "0102424007",
+      "messageToSupplier": "",
+      "accountNumber": "418570"
+    },
+    "delivery": {
+      "company": "Regionens hus Region Jönköpings län",
+      "recipient": "Resurscentrum/Anneli Wetter",
+      "address": "Husargatan 4",
+      "postalCode": "554 53 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "be4fd345-3129-47ca-8369-c7d671a9aa52",
+    "orderNumber": "REG-10012",
+    "createdAt": "2026-04-22T13:09:25.817Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "f39d2de9-24b9-4ad7-a48a-7582cdf07357",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Jerker Karlsson",
+        "title": "Controller",
+        "titleLine2": "",
+        "orgLine1": "Psykiatri, rehabilitering och diagnostik",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      },
+      {
+        "id": "ec2aca8d-7e71-4eed-a629-b880991c3d4f",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Jennie Johansson",
+        "title": "Controller",
+        "titleLine2": "",
+        "orgLine1": "Psykiatri, rehabilitering och diagnostik",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      },
+      {
+        "id": "e8743e58-9d10-4c44-af10-9a28a5c6cf9f",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Håkan Nyman Svensson",
+        "title": "Controller",
+        "titleLine2": "",
+        "orgLine1": "Psykiatri, rehabilitering och diagnostik",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      },
+      {
+        "id": "8c67d549-5737-443c-be8a-1a64f43c8ba2",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Ulrika Holfelt",
+        "title": "Controller",
+        "titleLine2": "",
+        "orgLine1": "Psykiatri, rehabilitering och diagnostik",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      },
+      {
+        "id": "017094a8-49bd-4480-b3bc-d483c01fcdfa",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Ida Björnfot",
+        "title": "Controller",
+        "titleLine2": "",
+        "orgLine1": "Psykiatri, rehabilitering och diagnostik",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Jennie Johansson",
+      "ordererEmail": "jennie.johansson@rjl.se",
+      "ordererPhone": "0703989348",
+      "messageToSupplier": "",
+      "accountNumber": "115002"
+    },
+    "delivery": {
+      "company": "Psykiatri, rehabilitering och diagnostik stab",
+      "recipient": "Jennie Johansson",
+      "address": "Batterigatan 14C plan 1",
+      "postalCode": "551 85",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "bbb74311-062c-4f35-b2d9-6502bd30f717",
+    "orderNumber": "REG-10011",
+    "createdAt": "2026-04-22T13:03:37.825Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "726231c9-f0a1-4707-b5bb-28e96b8e92d7",
+        "badgeId": 2,
+        "categoryId": "namnbrickor",
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 15,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "extraLine": "",
+        "format": "",
+        "name": "Vikarie",
+        "title": "Servicepersonal",
+        "titleLine2": "",
+        "orgLine1": "Närservice",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 0
+      }
+    ],
+    "orderer": {
+      "ordererName": "Sofia Lago",
+      "ordererEmail": "sofia.lago@rjl.se",
+      "ordererPhone": "0730646641",
+      "messageToSupplier": "",
+      "accountNumber": "233800"
+    },
+    "delivery": {
+      "company": "Närservice Region Jönköpings Län",
+      "recipient": "Sofia Lago",
+      "address": "Höglandssjukhuset Västanågatan9 Närservice hus 29",
+      "postalCode": "575 81",
+      "city": "Eksjö",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "040b3fbc-da43-42f8-83c6-33d864e2a4af",
+    "orderNumber": "REG-10007",
+    "createdAt": "2026-04-17T14:15:30.652Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "70257f2b-416f-4204-bba7-0255815d5e9c",
+        "badgeId": 58,
+        "categoryId": "yrkestitelsskyltar",
+        "productType": "yrkestitelsskylt",
+        "productTypeLabel": "Yrkestitelsskylt",
+        "previewType": "profession",
+        "badgeName": "Tandläkare",
+        "articleNumber": "YRK-0212",
+        "quantity": 2,
+        "image": "/art.-0201.jpg",
+        "desc": "Yrkestitelsskylt i ljusblå färg.",
+        "extraFields": [],
+        "title": "Tandläkare",
+        "color": "Ljusblå",
+        "textColor": ""
+      }
+    ],
+    "orderer": {
+      "ordererName": "Jessica Bruhn",
+      "ordererEmail": "jessica.bruhn@rjl.se",
+      "ordererPhone": "010-2429703",
+      "messageToSupplier": "",
+      "accountNumber": "512110"
+    },
+    "delivery": {
+      "company": "Råslätt Folktandvprd",
+      "recipient": "Jessica Bruhn",
+      "address": "Törnskategatan 1",
+      "postalCode": "556 14",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "04b4ce06-1f34-4d9f-a5cc-48a0df7993e4",
+    "orderNumber": "REG-10006",
+    "createdAt": "2026-04-13T18:16:46.514Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "c7896f7a-9856-4eba-b17b-df4701954800",
+        "badgeId": 308,
+        "categoryId": "pendlade-vit",
+        "productType": "pendlad_skylt",
+        "productTypeLabel": "pendlad_skylt",
+        "previewType": "hanging_sign",
+        "badgeName": "Pendlad skylt - vit bakgrund, dubbelsidig",
+        "articleNumber": "0308",
+        "quantity": 1,
+        "image": "/pendlad-vit-stor.png",
+        "desc": "Pendlad hänvisnings- eller verksamhetsskylt med eller utan pil. Format 1000x186mm",
+        "customText": "",
+        "customTextLine1": "Barn- och ungdoms-",
+        "customTextLine2": "medicinska mottagningen",
+        "arrowPlacement": "left",
+        "arrowDirection": "left",
+        "hangingSignTextMode": "double",
+        "extraFields": [
+          {
+            "key": "customTextLine1",
+            "label": "Textrad 1",
+            "value": "Barn- och ungdoms-"
+          },
+          {
+            "key": "customTextLine2",
+            "label": "Textrad 2",
+            "value": "medicinska mottagningen"
+          },
+          {
+            "key": "arrowPlacement",
+            "label": "Pilplacering",
+            "value": "left"
+          },
+          {
+            "key": "arrowDirection",
+            "label": "Pilriktning",
+            "value": "left"
+          }
+        ]
+      }
+    ],
+    "orderer": {
+      "ordererName": "Anna Svensson",
+      "ordererEmail": "anna@rjl.se",
+      "ordererPhone": "076-6104522",
+      "messageToSupplier": "Monteras i korridor D5, hus F4 Ryhov",
+      "accountNumber": "5554875"
+    },
+    "delivery": {
+      "company": "Onkologen Ryhov, Jönköping",
+      "recipient": "Elin Thunberg",
+      "address": "Sjukhusvägen 25",
+      "postalCode": "555 85 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "3e69a06a-31d7-49cb-a3f9-f53ff77878c5",
+    "orderNumber": "REG-10005",
+    "createdAt": "2026-04-12T12:26:55.274Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "4ff9396c-11e8-481b-9bd6-9522a13ecc91",
+        "badgeId": 301,
+        "categoryId": "pendlade-vit",
+        "productType": "pendlad_skylt",
+        "productTypeLabel": "Pendlad skylt",
+        "previewType": "hanging_sign",
+        "badgeName": "Pendlad skylt - vit bakgrund, enkelsidig",
+        "articleNumber": "0301",
+        "quantity": 1,
+        "image": "/pendlad-vit.png",
+        "desc": "Pendlad hänvisnings- eller verksamhetsskylt med eller utan pil . Format 1500x140mm",
+        "customText": "Intensivvårdsavdelningen",
+        "customTextLine1": "",
+        "customTextLine2": "",
+        "arrowPlacement": "left",
+        "arrowDirection": "left",
+        "hangingSignTextMode": "single",
+        "extraFields": [
+          {
+            "key": "customText",
+            "label": "Text",
+            "value": "Intensivvårdsavdelningen"
+          },
+          {
+            "key": "arrowPlacement",
+            "label": "Pilplacering",
+            "value": "left"
+          },
+          {
+            "key": "arrowDirection",
+            "label": "Pilriktning",
+            "value": "left"
+          }
+        ]
+      },
+      {
+        "id": "bb46e180-573a-4fcb-a142-1ae6a31078f8",
+        "badgeId": 302,
+        "categoryId": "pendlade-vit",
+        "productType": "pendlad_skylt",
+        "productTypeLabel": "pendlad_skylt",
+        "previewType": "hanging_sign",
+        "badgeName": "Pendlad skylt - vit bakgrund, dubbelsidig",
+        "articleNumber": "0302",
+        "quantity": 1,
+        "image": "/pendlad-vit.png",
+        "desc": "Pendlad hänvisnings- eller verksamhetsskylt med eller utan pil . Format 1500x140mm",
+        "customText": "Intensivvårdsavdelningen",
+        "customTextLine1": "",
+        "customTextLine2": "",
+        "arrowPlacement": "left",
+        "arrowDirection": "left",
+        "hangingSignTextMode": "single",
+        "extraFields": [
+          {
+            "key": "customText",
+            "label": "Text",
+            "value": "Intensivvårdsavdelningen"
+          },
+          {
+            "key": "arrowPlacement",
+            "label": "Pilplacering",
+            "value": "left"
+          },
+          {
+            "key": "arrowDirection",
+            "label": "Pilriktning",
+            "value": "left"
+          }
+        ]
+      },
+      {
+        "id": "543fc662-e617-4205-b79d-f9a1026f4aea",
+        "badgeId": 305,
+        "categoryId": "pendlade-vit",
+        "productType": "pendlad_skylt",
+        "productTypeLabel": "pendlad_skylt",
+        "previewType": "hanging_sign",
+        "badgeName": "Pendlad skylt - vit bakgrund, enkelsidig",
+        "articleNumber": "0305",
+        "quantity": 1,
+        "image": "/pendlad-vit-stor.png",
+        "desc": "Pendlad hänvisnings- eller verksamhetsskylt med eller utan pil . Format 1500x260mm",
+        "customText": "",
+        "customTextLine1": "Barn- och ungdoms-",
+        "customTextLine2": "medicinska mottagningen",
+        "arrowPlacement": "left",
+        "arrowDirection": "left",
+        "hangingSignTextMode": "double",
+        "extraFields": [
+          {
+            "key": "customTextLine1",
+            "label": "Textrad 1",
+            "value": "Barn- och ungdoms-"
+          },
+          {
+            "key": "customTextLine2",
+            "label": "Textrad 2",
+            "value": "medicinska mottagningen"
+          },
+          {
+            "key": "arrowPlacement",
+            "label": "Pilplacering",
+            "value": "left"
+          },
+          {
+            "key": "arrowDirection",
+            "label": "Pilriktning",
+            "value": "left"
+          }
+        ]
+      },
+      {
+        "id": "c2d2f227-712a-4756-bef5-3ab52602a2cd",
+        "badgeId": 306,
+        "categoryId": "pendlade-vit",
+        "productType": "pendlad_skylt",
+        "productTypeLabel": "pendlad_skylt",
+        "previewType": "hanging_sign",
+        "badgeName": "Pendlad skylt - vit bakgrund, dubbelsidig",
+        "articleNumber": "0306",
+        "quantity": 1,
+        "image": "/pendlad-vit-stor.png",
+        "desc": "Pendlad hänvisnings- eller verksamhetsskylt med eller utan pil. Format 1500x260mm",
+        "customText": "",
+        "customTextLine1": "Barn- och ungdoms-",
+        "customTextLine2": "medicinska mottagningen",
+        "arrowPlacement": "left",
+        "arrowDirection": "left",
+        "hangingSignTextMode": "double",
+        "extraFields": [
+          {
+            "key": "customTextLine1",
+            "label": "Textrad 1",
+            "value": "Barn- och ungdoms-"
+          },
+          {
+            "key": "customTextLine2",
+            "label": "Textrad 2",
+            "value": "medicinska mottagningen"
+          },
+          {
+            "key": "arrowPlacement",
+            "label": "Pilplacering",
+            "value": "left"
+          },
+          {
+            "key": "arrowDirection",
+            "label": "Pilriktning",
+            "value": "left"
+          }
+        ]
+      }
+    ],
+    "orderer": {
+      "ordererName": "Anna Svensson",
+      "ordererEmail": "anna@rjl.se",
+      "ordererPhone": "076-6104522",
+      "messageToSupplier": "Kan monteras frn 10/6 kl.12:00",
+      "accountNumber": "5554875"
+    },
+    "delivery": {
+      "company": "Onkologen Ryhov, Jönköping",
+      "recipient": "Elin Thunberg",
+      "address": "Sjukhusvägen 25",
+      "postalCode": "555 85 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "e8cca777-d6c5-417f-815f-223e485602b9",
+    "orderNumber": "REG-10004",
+    "createdAt": "2026-04-05T15:04:18.400Z",
+    "status": "ny",
+    "cart": [
+      {
+        "id": "c577c418-34a4-424d-95a7-130e3b852685",
+        "badgeId": 101,
+        "productType": "dorropnare",
+        "productTypeLabel": "dorropnare",
+        "previewType": "image",
+        "badgeName": "Art.nr 0101",
+        "articleNumber": "0101",
+        "quantity": 1,
+        "image": "/art.-0101.jpg",
+        "desc": "Dekal runt dörröppnare. Symbol uppe och pil vänster. Format 180x440mm",
+        "extraFields": []
+      },
+      {
+        "id": "8fc1cb57-8f93-4db8-8a4b-1de562dcb994",
+        "badgeId": 101,
+        "productType": "dorropnare",
+        "productTypeLabel": "dorropnare",
+        "previewType": "image",
+        "badgeName": "Art.nr 0101",
+        "articleNumber": "0101",
+        "quantity": 2,
+        "image": "/art.-0101.jpg",
+        "desc": "Dekal runt dörröppnare. Symbol uppe och pil vänster. Format 180x440mm",
+        "extraFields": []
+      },
+      {
+        "id": "57afb311-6e43-4ef2-b25f-b6bce1659a74",
+        "badgeId": 106,
+        "productType": "dorropnare",
+        "productTypeLabel": "dorropnare",
+        "previewType": "imageTall",
+        "badgeName": "Art.nr 0106",
+        "articleNumber": "0106",
+        "quantity": 4,
+        "image": "/art.-0106.jpg",
+        "desc": "Dekal runt dörröppnare. Symbol och pil höger. Format 440x180mm",
+        "extraFields": []
+      },
+      {
+        "id": "23d1f8f6-616c-4cd9-936b-d3dd2576bdad",
+        "badgeId": 502,
+        "productType": "taktila_piktogram",
+        "productTypeLabel": "Taktila piktogram",
+        "previewType": "image",
+        "badgeName": "Art.nr 0502",
+        "articleNumber": "0502",
+        "quantity": 2,
+        "image": "/art.-0502.jpg",
+        "desc": "Format 152x156,25mm",
+        "extraFields": []
+      },
+      {
+        "id": "87fe9022-24d2-4186-9ff3-5f2f12072b33",
+        "badgeId": 503,
+        "productType": "taktila_piktogram",
+        "productTypeLabel": "Taktila piktogram",
+        "previewType": "image",
+        "badgeName": "Art.nr 0503",
+        "articleNumber": "0503",
+        "quantity": 2,
+        "image": "/art.-0503.jpg",
+        "desc": "Format 152x156,25mm",
+        "extraFields": []
+      },
+      {
+        "id": "14954389-e1ff-49fc-8871-0a20a1fdca08",
+        "badgeId": 506,
+        "productType": "taktila_piktogram",
+        "productTypeLabel": "Taktila piktogram",
+        "previewType": "image",
+        "badgeName": "Art.nr 0506",
+        "articleNumber": "0506",
+        "quantity": 4,
+        "image": "/art.-0506.jpg",
+        "desc": "Format 152x156,25mm",
+        "extraFields": []
+      },
+      {
+        "id": "d5777d97-0a0f-404b-bb69-f37f7692e0ac",
+        "badgeId": 4,
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0207",
+        "articleNumber": "0207",
+        "quantity": 1,
+        "image": "/art.-0207.jpg",
+        "desc": "Med verksamhetsnamn, 2 rader, Format 75x30mm",
+        "name": "Richard Malmkvist",
+        "title": "Delare",
+        "titleLine2": "",
+        "orgLine1": "Röda huset 1",
+        "orgLine2": "andra raden",
+        "fastening": "Magnet",
+        "extraMagnets": 1
+      },
+      {
+        "id": "8549b893-2651-4640-922e-b84622bbad12",
+        "badgeId": 50,
+        "productType": "yrkestitelsskyltar",
+        "productTypeLabel": "Yrkestitelsskylt",
+        "previewType": "profession",
+        "badgeName": "Yrkestitelsskyltar",
+        "articleNumber": "YRK-0206",
+        "quantity": 2,
+        "image": "/art.-0201.jpg",
+        "desc": "Välj yrkesroll och färg.",
+        "title": "Barnmorska",
+        "professionChoiceId": "barnmorska",
+        "color": "#1565c0",
+        "textColor": "#ffffff"
+      },
+      {
+        "id": "3d58c50c-ec5b-4fce-a073-5d7c3dc7b76a",
+        "badgeId": 50,
+        "productType": "yrkestitelsskyltar",
+        "productTypeLabel": "Yrkestitelsskylt",
+        "previewType": "profession",
+        "badgeName": "Yrkestitelsskyltar",
+        "articleNumber": "YRK-0217",
+        "quantity": 1,
+        "image": "/art.-0201.jpg",
+        "desc": "Välj yrkesroll och färg.",
+        "title": "Biomedicinsk analytiker",
+        "professionChoiceId": "biomedicinsk_analytiker",
+        "color": "#7b1e3a",
+        "textColor": "#ffffff"
+      },
+      {
+        "id": "a3b52403-3d1b-4f07-9f3b-c5ece39cde2f",
+        "badgeId": 50,
+        "productType": "yrkestitelsskyltar",
+        "productTypeLabel": "Yrkestitelsskylt",
+        "previewType": "profession",
+        "badgeName": "Yrkestitelsskyltar",
+        "articleNumber": "YRK-0209",
+        "quantity": 4,
+        "image": "/art.-0201.jpg",
+        "desc": "Välj yrkesroll och färg.",
+        "title": "Arbetsterapeut",
+        "professionChoiceId": "arbetsterapeut",
+        "color": "#ef6c00",
+        "textColor": "#ffffff"
+      }
+    ],
+    "orderer": {
+      "ordererName": "Anna Svensson",
+      "ordererEmail": "anna@rjl.se",
+      "ordererPhone": "0766104522",
+      "messageToSupplier": "",
+      "accountNumber": "5554875"
+    },
+    "delivery": {
+      "company": "Onkologen Ryhov, Jönköping",
+      "recipient": "Elin Thunberg",
+      "address": "Sjukhusvägen 25",
+      "postalCode": "555 85 ",
+      "city": "Jönköping",
+      "country": "Sverige"
+    }
+  },
+  {
+    "id": "da39ca16-a9c7-48ff-a12e-bfd65e2c8967",
+    "orderNumber": "REG-10003",
+    "createdAt": "2026-04-05T12:45:50.088Z",
+    "status": "påbörjad",
+    "cart": [
+      {
+        "id": "3f57de10-6412-4a0a-a1aa-8ce0cdf44003",
+        "badgeId": 101,
+        "productType": "dorropnare",
+        "productTypeLabel": "dorropnare",
+        "previewType": "image",
+        "badgeName": "Art.nr 0101",
+        "articleNumber": "0101",
+        "quantity": 2,
+        "image": "/art.-0101.jpg",
+        "desc": "Dekal runt dörröppnare. Symbol uppe och pil vänster. Format 180x440mm",
+        "extraFields": []
+      },
+      {
+        "id": "eefe2909-db4a-4132-83df-7680b7d09f7c",
+        "badgeId": 2,
+        "productType": "namnbricka",
+        "productTypeLabel": "namnbricka",
+        "previewType": "badge",
+        "badgeName": "Art.nr 0202",
+        "articleNumber": "0202",
+        "quantity": 1,
+        "image": "/art.-0202.jpg",
+        "desc": "Med verksamhetsnamn, En rad, Format 75x30mm",
+        "name": "Anna Svensson",
+        "title": "Verksamhetschef",
+        "titleLine2": "",
+        "orgLine1": "Onkologkliniken",
+        "orgLine2": "",
+        "fastening": "Magnet",
+        "extraMagnets": 2
+      },
+      {
+        "id": "e47a325d-aa9e-4fd9-bff3-d0422bb8b796",
+        "badgeId": 506,
+        "productType": "taktila_piktogram",
+        "productTypeLabel": "Taktila piktogram",
+        "previewType": "image",
+        "badgeName": "Art.nr 0506",
+        "articleNumber": "0506",
+        "quantity": 2,
+        "image": "/art.-0506.jpg",
+        "desc": "Format 152x156,25mm",
+        "extraFields": []
+      },
+      {
+        "id": "ec5f1a3b-4f08-434c-9e10-01f2dda08e52",
+        "badgeId": 503,
+        "productType": "taktila_piktogram",
+        "productTypeLabel": "Taktila piktogram",
+        "previewType": "image",
+        "badgeName": "Art.nr 0503",
+        "articleNumber": "0503",
+        "quantity": 2,
+        "image": "/art.-0503.jpg",
+        "desc": "Format 152x156,25mm",
+        "extraFields": []
+      },
+      {
+        "id": "9f0e669f-ccfa-41ff-ac60-b778d668ad2a",
+        "badgeId": 502,
+        "productType": "taktila_piktogram",
+        "productTypeLabel": "Taktila piktogram",
+        "previewType": "image",
+        "badgeName": "Art.nr 0502",
+        "articleNumber": "0502",
+        "quantity": 1,
+        "image": "/art.-0502.jpg",
+        "desc": "Format 152x156,25mm",
+        "extraFields": []
+      }
+    ],
+    "orderer": {
+      "ordererName": "Anna Svensson",
+      "ordererEmail": "anna@rjl.se",
+      "ordererPhone": "0766104522",
+      "messageToSupplier": "Kan skickas med post",
+      "accountNumber": "558963"
+    },
+    "delivery": {
+      "company": "Onkologen Ryhov, Jönköping",
+      "recipient": "Elin Thunberg",
+      "address": "Sjukhusvägen 25",
+      "postalCode": "555 85 ",
+      "city": "Jönköping",
       "country": "Sverige"
     }
   },
@@ -151,40 +1408,6 @@
     "delivery": {
       "company": "Onkologmottagningen Jönköpings Län",
       "recipient": "Ellie",
-      "address": "Ryhovsgatan 33",
-      "postalCode": "556 52 ",
-      "city": "Jönköping",
-      "country": "Sverige"
-    }
-  },
-  {
-    "id": "7f4568e0-bcec-4950-80e2-36a6b9f0a6f6",
-    "orderNumber": "REG-10001",
-    "createdAt": "2026-03-29T17:25:16.213Z",
-    "status": "skickad",
-    "cart": [
-      {
-        "id": "766b15eb-4343-43fc-8952-9eb791c6b03c",
-        "productType": "yrkestitelsskyltar",
-        "badgeId": 101,
-        "badgeName": "Yrkestitelsskylt",
-        "title": "Läkare",
-        "professionChoiceId": "lakare",
-        "color": "#c62828",
-        "textColor": "#ffffff",
-        "quantity": 1
-      }
-    ],
-    "orderer": {
-      "ordererName": "Anna Svensson",
-      "ordererEmail": "anna@rjl.se",
-      "ordererPhone": "076-6104522",
-      "messageToSupplier": "",
-      "accountNumber": "5554875"
-    },
-    "delivery": {
-      "company": "Onkologmottagningen Jönköpings Län",
-      "recipient": "Martin",
       "address": "Ryhovsgatan 33",
       "postalCode": "556 52 ",
       "city": "Jönköping",
