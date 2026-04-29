@@ -21,7 +21,8 @@
     "dev": "concurrently \"npm run client\" \"npm run server\"",
     "build": "react-scripts build",
     "test": "react-scripts test --passWithNoTests",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "cd server && npm install"
   },
   "eslintConfig": {
     "extends": [
