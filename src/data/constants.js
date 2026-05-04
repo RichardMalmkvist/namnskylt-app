@@ -19,8 +19,7 @@ export const PRODUCT_TYPES = [
 
 export const NAME_BADGES = PRODUCTS.filter(
   (product) =>
-    product.categoryId === "namn-och-yrkestitelsskyltar" &&
-    product.subType === "namnbrickor" &&
+    product.categoryId === "namnbrickor" &&
     product.isImplemented
 );
 
@@ -36,10 +35,6 @@ export const PROFESSION_BADGES = [
     isImplemented: true,
   },
 ];
-
-/**
- * Hjälpfunktioner för framtiden
- */
 
 export function getProductsBySubType(subType) {
   return PRODUCTS.filter(
