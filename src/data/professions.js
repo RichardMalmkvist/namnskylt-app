@@ -118,4 +118,11 @@ export const PROFESSION_CHOICES = [
     textColor: "#000000",
     articleNumber: "YRK-0219-2",
   },
+  {
+    id: "omvårdnadsassistent",
+    label: "Omvårdnadsassistent",
+    color: "#ffffff",
+    textColor: "#000000",
+    articleNumber: "YRK-0219-2",
+  },
 ];
