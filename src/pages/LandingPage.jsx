@@ -18,10 +18,6 @@ export default function LandingPage({
   );
 
   function openFeaturedCategory(category) {
-    if (category.id === "namnbrickor") {
-      openNameBadges();
-      return;
-    }
 
     openCategory(category);
   }
