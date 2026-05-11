@@ -242,7 +242,7 @@ export const PRODUCTS = [
     catalogBehavior: "list",
     previewType: "profession",
     name: "Omvårdnadsassistent",
-    desc: "Yrkestitelsskylt i vit färg med svart text.",
+    desc: "Yrkestitelsskylt i grön färg.",
     image: "/art.-0201.jpg",
     isImplemented: true,
     fixedProfessionTitle: "Omvårdnadsassistent",
