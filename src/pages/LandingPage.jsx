@@ -29,6 +29,13 @@ export default function LandingPage({
       <div style={pageStyle}>
         {toastMessage ? <div style={toastStyle}>{toastMessage}</div> : null}
 
+        <div style={holidayNoticeStyle}>
+          <strong>Semesterstängt vecka 28–31</strong>
+          <div style={{ marginTop: 6 }}>
+            Beställningar kan fortfarande registreras i portalen men kommer att behandlas efter semesterperioden.
+          </div>
+        </div>
+
         <section style={heroSectionStyle}>
           <div style={heroOverlayStyle}>
             <div style={heroContentStyle}>
@@ -425,4 +432,14 @@ const categoryTitleStyle = {
 const categoryTitleMutedStyle = {
   fontWeight: 500,
   color: "#6b7280",
+};
+
+const holidayNoticeStyle = {
+  marginBottom: 24,
+  background: "#f7f8f9",
+  border: "1px solid #e5e7eb",
+  color: "#374151",
+  borderRadius: 16,
+  padding: "16px 20px",
+  boxShadow: "0 6px 18px rgba(0,0,0,0.04)",
 };
