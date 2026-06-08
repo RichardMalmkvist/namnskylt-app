@@ -5,6 +5,7 @@ import { PRODUCTS } from "../../data/products";
 
 const NAME_BADGE_TEMPLATE_BY_BADGE_ID = {
   208: "/ftv tom.jpg",
+  209: "/ftv tom.jpg",
   211: "/energikontor blank.jpg",
   212: "/energikontor blank.jpg",
 };
