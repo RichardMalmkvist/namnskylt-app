@@ -537,6 +537,28 @@ export const PRODUCTS = [
     },
     fasteningOptions: [],
   },
+  {
+  id: 220,
+  articleNumber: "YRK-0220",
+  categoryId: "yrkestitelsskyltar",
+  productType: "yrkestitelsskylt",
+  subType: "yrkestitelsskylt",
+  flowType: "direct",
+  catalogBehavior: "list",
+  previewType: "profession",
+  name: "Ledningsansvarig sjuksköterska",
+  desc: "Yrkestitelsskylt i gul färg.",
+  image: "/art.-0201.jpg",
+  isImplemented: true,
+  fixedProfessionTitle: "Ledningsansvarig",
+  fixedProfessionTitleLine2: "sjuksköterska",
+  fixedColor: "Gul",
+  fixedTextColor: "Svart",
+  fields: {
+    quantity: true,
+  },
+  fasteningOptions: [],
+},
 
   {
     id: 220,

@@ -24,6 +24,7 @@ function getProfessionCardColors(color, textColor) {
     vinröd: "#8e244d",
     svart: "#212121",
     vit: "#ffffff",
+    gul: "#ffeb3b",
   };
 
   const background = backgroundMap[normalizedColor] || "#d62828";
@@ -267,6 +268,9 @@ export default function CatalogPage({
   function renderProfessionProductPreview(product) {
     const professionTitle =
       product?.fixedProfessionTitle || product?.name || "Titel";
+
+    const professionTitleLine2 = product?.fixedProfessionTitleLine2 || "";
+
     const { background, color } = getProfessionCardColors(
       product?.fixedColor,
       product?.fixedTextColor
@@ -293,9 +297,19 @@ export default function CatalogPage({
               ...professionPreviewTextStyle,
               fontSize: getProfessionFontSize(professionTitle),
               letterSpacing: getProfessionLetterSpacing(professionTitle),
+              display: "flex",
+              flexDirection: "column",
+              gap: professionTitleLine2 ? 6 : 0,
+              lineHeight: 1,
             }}
           >
-            {professionTitle}
+            <span>{professionTitle}</span>
+
+            {professionTitleLine2 && (
+              <span style={{ fontSize: "0.72em" }}>
+                {professionTitleLine2}
+              </span>
+            )}
           </div>
         </div>
       </div>
@@ -359,7 +373,9 @@ export default function CatalogPage({
               >
                 {products.map((product) => (
                   <option key={product.id} value={product.id}>
-                    {product.fixedProfessionTitle || product.name}
+                    {product.fixedProfessionTitleLine2
+                      ? `${product.fixedProfessionTitle} ${product.fixedProfessionTitleLine2}`
+                      : product.fixedProfessionTitle || product.name}
                   </option>
                 ))}
               </select>
