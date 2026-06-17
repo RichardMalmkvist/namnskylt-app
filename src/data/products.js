@@ -444,11 +444,11 @@ export const PRODUCTS = [
     flowType: "direct",
     catalogBehavior: "list",
     previewType: "profession",
-    name: "Ortopedassistent",
+    name: "Ortodontassistent",
     desc: "Yrkestitelsskylt i ljusblå färg.",
     image: "/art.-0201.jpg",
     isImplemented: true,
-    fixedProfessionTitle: "Ortopedassistent",
+    fixedProfessionTitle: "Ortodontassistent",
     fixedColor: "Ljusblå",
     fields: {
       quantity: true,
