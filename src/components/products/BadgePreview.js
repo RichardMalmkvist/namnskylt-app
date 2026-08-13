@@ -8,6 +8,8 @@ const NAME_BADGE_TEMPLATE_BY_BADGE_ID = {
   209: "/ftv tom.jpg",
   211: "/energikontor blank.jpg",
   212: "/energikontor blank.jpg",
+  250: "/tenhult tom.jpg",
+  251: "/stora tom.jpg",
 };
 
 const DEFAULT_NAME_BADGE_TEMPLATE_SRC = "/namnskylt-blank.jpg";

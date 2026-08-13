@@ -569,6 +569,14 @@ export default function CatalogPage({
           </div>
         )}
 
+        {product.articleNumber === "0250" && (
+  <div style={catalogSubsectionHeadingWrapStyle}>
+    <h2 style={catalogSubsectionHeadingStyle}>
+      Namnbrickor Tenhults gymnasiet och Stora Segerstad gymnasiet
+    </h2>
+  </div>
+)}
+
         {renderProductCard(product)}
       </div>
     ));
