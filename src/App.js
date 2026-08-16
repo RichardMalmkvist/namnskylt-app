@@ -603,6 +603,31 @@ export default function App() {
       return ordersSortDirection === "asc" ? result : -result;
     });
 
+  const orderTotals = orders.reduce(
+    (totals, order) => {
+      (order.cart || []).forEach((item) => {
+        const quantity = Number(item.quantity || 0);
+
+        if (item.productType === "namnbricka") {
+          totals.nameBadges += quantity;
+        }
+
+        if (
+          item.productType === "yrkestitelsskyltar" ||
+          item.productType === "yrkestitelsskylt"
+        ) {
+          totals.professionBadges += quantity;
+        }
+      });
+
+      return totals;
+    },
+    {
+      nameBadges: 0,
+      professionBadges: 0,
+    }
+  );
+
     return (
       <PageContainer>
         <style>{printStyle}</style>
@@ -643,6 +668,20 @@ export default function App() {
               <p style={{ margin: "8px 0 0", color: "#555" }}>
                 {sortedOrders.length} av {orders.length} beställningar visas
               </p>
+              <div
+  style={{
+    display: "flex",
+    gap: 18,
+    flexWrap: "wrap",
+    marginTop: 10,
+    color: "#374151",
+    fontSize: 15,
+    fontWeight: 600,
+  }}
+>
+  <span>Namnbrickor: {orderTotals.nameBadges}</span>
+  <span>Yrkestitelsskyltar: {orderTotals.professionBadges}</span>
+</div>
             </div>
 
             <button
