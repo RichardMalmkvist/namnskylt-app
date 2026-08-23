@@ -6,10 +6,13 @@ import { PRODUCTS } from "../../data/products";
 const NAME_BADGE_TEMPLATE_BY_BADGE_ID = {
   208: "/ftv tom.jpg",
   209: "/ftv tom.jpg",
+  500: "/ftv tom.jpg",
   211: "/energikontor blank.jpg",
   212: "/energikontor blank.jpg",
   250: "/tenhult tom.jpg",
   251: "/stora tom.jpg",
+  252: "/tenhult tom.jpg",
+  253: "/stora tom.jpg",
 };
 
 const DEFAULT_NAME_BADGE_TEMPLATE_SRC = "/namnskylt-blank.jpg";
