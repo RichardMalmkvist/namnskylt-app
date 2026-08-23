@@ -266,7 +266,7 @@ export const PRODUCTS = [
   flowType: "form",
   previewType: "badge",
   name: "Art.nr 0253",
-  desc: "Tenhults gymnasiet, Format 75x30mm",
+  desc: "Stora Segerstad gymnasiet, Format 75x30mm",
   image: "/stora seger namn.jpg",
   isImplemented: true,
   group: "tenhult-stora-segerstad",
