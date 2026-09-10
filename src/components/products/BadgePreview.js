@@ -13,6 +13,7 @@ const NAME_BADGE_TEMPLATE_BY_BADGE_ID = {
   251: "/stora tom.jpg",
   252: "/tenhult tom.jpg",
   253: "/stora tom.jpg",
+  310: "/jlt tom.jpg",
 };
 
 const DEFAULT_NAME_BADGE_TEMPLATE_SRC = "/namnskylt-blank.jpg";
@@ -613,6 +614,20 @@ function getNameBadgeLayout(badgeId) {
       },
     };
   }
+
+  if (badgeId === 310) {
+  return {
+    ...base,
+    name: {
+      ...base.name,
+      color: "#761F3A",
+    },
+    title: {
+      ...base.title,
+      color: "#761F3A",
+    },
+  };
+}
 
   return base;
 }
