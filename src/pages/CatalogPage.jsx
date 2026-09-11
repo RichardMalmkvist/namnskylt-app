@@ -577,6 +577,14 @@ export default function CatalogPage({
   </div>
 )}
 
+{product.articleNumber === "0310" && (
+  <div style={catalogSubsectionHeadingWrapStyle}>
+    <h2 style={catalogSubsectionHeadingStyle}>
+      Namnbrickor JLT
+    </h2>
+  </div>
+)}
+
         {renderProductCard(product)}
       </div>
     ));
